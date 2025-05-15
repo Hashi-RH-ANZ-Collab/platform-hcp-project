@@ -15,7 +15,7 @@ data "hcp_iam_policy" "project" {
     {
       role = "roles/contributor"
       principals = [
-        "${hcp_group.this.group_id}",
+        "${hcp_group.this.resource_id}",
       ]
     },
   ]
