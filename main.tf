@@ -28,11 +28,6 @@ resource "hcp_project_iam_policy" "project_policy" {
 }
 
 
-resource "tfe_organization" "this" {
-  name  = var.hcp_project_name
-  email =  var.admin_email
-
-  lifecycle {
-    prevent_destroy = true
-  }
+data "tfe_organization" "this" {
+  name = var.tfe_organization_name
 }

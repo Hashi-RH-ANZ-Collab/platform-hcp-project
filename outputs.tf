@@ -5,3 +5,8 @@ output "hcp_project_name" {
 output "hcp_group" {
   value = hcp_group.this.resource_id
 }
+
+output "tfe_organization_name" {
+  value = data.tfe_organization.this.name
+  
+}

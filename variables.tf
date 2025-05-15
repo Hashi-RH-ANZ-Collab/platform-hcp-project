@@ -12,3 +12,8 @@ variable "admin_email" {
   description = "admin email"
   type        = string
 }
+
+variable "tfe_organization_name" {
+  description = "TFE organization name"
+  type        = string
+}
