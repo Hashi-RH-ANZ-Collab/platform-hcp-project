@@ -26,3 +26,13 @@ resource "hcp_project_iam_policy" "project_policy" {
   project_id  = hcp_project.this.resource_id
   policy_data = data.hcp_iam_policy.project.policy_data
 }
+
+
+resource "tfe_organization" "this" {
+  name  = var.hcp_project_name
+  email = "admin@company.com"
+
+  lifecycle {
+    prevent_destroy = true
+  }
+}
