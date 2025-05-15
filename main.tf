@@ -30,7 +30,7 @@ resource "hcp_project_iam_policy" "project_policy" {
 
 resource "tfe_organization" "this" {
   name  = var.hcp_project_name
-  email = "admin@company.com"
+  email =  var.admin_email
 
   lifecycle {
     prevent_destroy = true

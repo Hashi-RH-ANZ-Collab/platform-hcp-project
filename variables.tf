@@ -7,3 +7,8 @@ variable "hcp_project_description" {
   description = "hcp project description"
   type        = string
 }
+
+variable "admin_email" {
+  description = "admin email"
+  type        = string
+}
