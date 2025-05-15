@@ -12,5 +12,5 @@ output "tfe_organization_name" {
 }
 
 output "hcp_project_id" {
-  value = hcp_project.this.id
+  value = hcp_project.this.resource_id
 }
